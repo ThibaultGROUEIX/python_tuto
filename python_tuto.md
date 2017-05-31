@@ -627,3 +627,42 @@ code
 code
 ```
 
+## JSON
+
+Permet de loader et stocker des sequences dans des fichiers facilement.
+
+```python
+import json
+with open('hello.txt', 'w') as f:
+	f.write(json.dumps(mydict()+ '\n'))
+	mydict2 = json.loads(f.read())
+```
+
+
+
+## tdqm
+
+Package pour visualizer l'évolution d'une boucle for dans la console (pratique)
+
+```python
+import tdqm
+for i in tqdm(test_indexes, total = len(test_indexes)):
+    code
+```
+
+
+# argparse
+
+```python
+import argparse
+parser = argparse.ArgumentParser(description='Denoise options')
+parser.add_argument('-l', '--logdir', required=True, help='directory of model used')
+parser.add_argument('-g',"--gpu",  default=0)
+parser.add_argument('-f', '--file',  default='/home/laurent/dataset3/train/exr/livingroom-back_Cam015_rgb_0005.exr')
+parser.add_argument('-e', '--epoch',  default=100, type=int)
+cmd_opt = parser.parse_args()
+print(cmd_opt)
+
+```
+
+[![Analytics](https://ga-beacon.appspot.com/UA-91308638-2/github.com/ThibaultGROUEIX/python_tuto/python_tuto.md?pixel)](https://github.com/ThibaultGROUEIX/python_tuto/)

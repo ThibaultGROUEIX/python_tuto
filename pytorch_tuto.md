@@ -141,3 +141,6 @@ import visdom
 vis = visdom.Visdom()
 vis.image(tensor.numpy())
 ```
+
+[![Analytics](https://ga-beacon.appspot.com/UA-91308638-2/github.com/ThibaultGROUEIX/python_tuto/pytorch_tuto.md?pixel)](https://github.com/ThibaultGROUEIX/python_tuto/)
+

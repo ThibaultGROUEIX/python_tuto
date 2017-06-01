@@ -665,4 +665,36 @@ print(cmd_opt)
 
 ```
 
+# Multiprocessing
+
+Focusing on simple things, embarrassingly parralel for loops such as :
+
+```python
+for i in inputs:
+    results[i] = processInput(i)
+# now do something with results
+```
+
+```python
+from joblib import Parallel, delayed
+import multiprocessing
+    
+# what are your inputs, and what operation do you want to 
+# perform on each input. For example...
+inputs = range(10) 
+def processInput(i):
+	return i * i
+
+num_cores = multiprocessing.cpu_count()
+    
+results = Parallel(n_jobs=num_cores)(delayed(processInput)(i) for i in inputs)
+```
+
+Note that processInput has to be pickable (i.e can't be define in a class, or a closure). If you can't avoid it, you can do :
+
+```python
+def NewprocessInput(dataset, index):
+    return dataset.processInput(index
+```
+
 [![Analytics](https://ga-beacon.appspot.com/UA-91308638-2/github.com/ThibaultGROUEIX/python_tuto/python_tuto.md?pixel)](https://github.com/ThibaultGROUEIX/python_tuto/)

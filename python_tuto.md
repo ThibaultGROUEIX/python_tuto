@@ -662,7 +662,6 @@ parser.add_argument('-f', '--file',  default='/home/laurent/dataset3/train/exr/l
 parser.add_argument('-e', '--epoch',  default=100, type=int)
 cmd_opt = parser.parse_args()
 print(cmd_opt)
-
 ```
 
 # Multiprocessing

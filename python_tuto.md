@@ -25,6 +25,20 @@ map(int, list)
 map(lambda(x): return x*x, list) ## apply function to all element of list
 ```
 
+`filter` creates a list of elements for which a function returns true.
+
+```python
+parameters = filter(lambda p: p.requires_grad, net.parameters())
+#Optimizer can only take parameters which grad are required
+
+```
+
+```python
+#Reduce is a really useful function for performing some computation on a list and returning the result. For example, if you wanted to compute the product of a list of integers.
+from functools import reduce
+product = reduce((lambda x, y: x * y), [1, 2, 3, 4])
+```
+
 ## Variables 
 
 *  permutations :

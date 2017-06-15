@@ -710,4 +710,8 @@ def NewprocessInput(dataset, index):
     return dataset.processInput(index
 ```
 
+#[Dominate<](https://github.com/Knio/dominate)
+Dominate is a Python library for creating and manipulating HTML documents using an elegant DOM API. It allows you to write HTML pages in pure Python very concisely, which eliminate the need to learn another template language, and to take advantage of the more powerful features of Python.
+https://github.com/Knio/dominate
+
 [![Analytics](https://ga-beacon.appspot.com/UA-91308638-2/github.com/ThibaultGROUEIX/python_tuto/python_tuto.md?pixel)](https://github.com/ThibaultGROUEIX/python_tuto/)

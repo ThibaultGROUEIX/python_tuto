@@ -132,6 +132,16 @@ optimizer.step()    # Does the update
 
 # Visdom
 
+Use https://github.com/ThibaultGROUEIX/python_tuto.git to set up ssh tunnels between you and your server.
+
+```shell
+#local
+forward.sh 8097 #will transfer everything launch on port 8097 on your machine to your local port
+#remote
+python -m visdom.server
+#you're all set
+```
+
 ```shell
  python -m visdom.server
 ```

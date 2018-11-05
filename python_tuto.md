@@ -710,7 +710,28 @@ def NewprocessInput(dataset, index):
     return dataset.processInput(index
 ```
 
+
+
+## Assertions 
+
+https://wiki.python.org/moin/UsingAssertionsEffectively
+
+```python
+   4     def add(self, id, name):
+   5       assert type(id) is IntType, "id is not an integer: %r" % id
+   6       assert type(name) is StringType, "name is not a string: %r" % name
+```
+
+**Can be turned down if python is called with *-O* flag**
+
 #[Dominate<](https://github.com/Knio/dominate)
+
+To handle HTML analysis, i recommend BeautifulSoup and RobotLocomoter package
+
+
+
+
+
 Dominate is a Python library for creating and manipulating HTML documents using an elegant DOM API. It allows you to write HTML pages in pure Python very concisely, which eliminate the need to learn another template language, and to take advantage of the more powerful features of Python.
 https://github.com/Knio/dominate
 
